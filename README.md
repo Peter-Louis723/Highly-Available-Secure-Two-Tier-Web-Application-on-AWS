@@ -4,7 +4,7 @@
 In this Project, I build a fully-functional two-tier architecture for a web application on AWS. As can be seen from the architecture diagram (`TwoTierApplication.png`), this architecture is designed for being **highly available**, fault-tolerant, and **secure**. This architecture contains use of multiple Availability Zones with heavy limitation on internet traffic to the backend.
 
 ## Architecture Diagram
-*(See: `TwoTierApplication.png`)*
+![description](TwoTierApplication.png)
 
 This architecture receives traffic from the edge using DNS and CDN services, passes them through WAF and distributes the load among auto-scaling instances in the private network using loadbalancer. The state is kept in a highly-available, multi-AZ relational database.
 
